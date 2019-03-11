@@ -41,7 +41,8 @@ with this parameters:
 email:admin@test
 password: secret
 if you send correct info you will receive a jwt-token . at the very first request you must request with "admin" email and password so the first token is for a admin. you can see admin email and password in database\seeds.
-so now you can add a new seller . send a request to http://localhost/aloPayk/public/api/user/store/2
+so now you can add a new seller .
+send a request to YourHOST/public/api/user/store/2
 the "2" at the end of url is role of this user wich in this case is a seller or store . you can add a customer with number 3 .
 the parameter you need  is :
  - token (which gain from previous step)
