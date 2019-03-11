@@ -24,7 +24,7 @@ Models :
 Middleware:
  middleware\Authenticate.php
  
-Breif:
+Brief:
 
 Each section of my code has their own comments for better understanding.
 but in brief explanation:
