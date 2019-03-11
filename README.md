@@ -61,6 +61,7 @@ the parameters you need are :
   - title
   - amount 
   - price
+  
   after that a new product is craeted .
   so now you need a customer . please create a customer with this api YourHOST/public/api/user/store/3
   and try step One again to take a token.
