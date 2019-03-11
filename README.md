@@ -52,7 +52,8 @@ the parameters you need are :
  - lat (please fill with correct Latitude if tou want to test in next step)
  - lng
  - address
- if every thing goes fine you see the success message
+ 
+ If every thing goes fine you see the success message
  so now you have a seller.  go back to step one and try to login with seller credentials and take a token.
  now you can add a product .
  send a post request to YourHOST/public/api/product/store
