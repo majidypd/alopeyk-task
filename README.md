@@ -42,7 +42,7 @@ email:admin@test
 password: secret
 if you send correct info you will receive a jwt-token . at the very first request you must request with "admin" email and password so the first token is for a admin. you can see admin email and password in database\seeds.
 
-so now you can add a new seller send a request to YourHOST/public/api/user/store/2
+so now you can add a new seller send a request to YourHOST/public/api/user/store/2 (2 = role_id)
 the "2" at the end of url is role of this user wich in this case is a seller or store . you can add a customer with number 3 .
 the parameters you need are :
  - token (which gain from previous step)
@@ -64,14 +64,18 @@ the parameters you need are :
   
   after that a new product is craeted .
   so now you need a customer . please create a customer with this api YourHOST/public/api/user/store/3
-  and try step One again to take a token.
+  and try step One again to get a token.
   and now you can search all products through this api :
-  YourHOST/public/api/product/getList/10000
+  YourHOST/public/api/product/getList/{radius}
   with this parameters:
   - token (which gain from previous step)
   
   which return the list of products of nearest store .
   
-
+For add a new order use this api :
+  YourHOST/public/api/order/store/{product_id}
+   with this parameters: 
+  - token (which gain from previous step - customer token)
+  - count (count of products)
 
 
